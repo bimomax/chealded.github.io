@@ -1,20 +1,173 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<html lang="ar" dir="rtl" class="dark">
 <head>
     <meta charset="UTF-8">
-    <title>Chealded | قيد الإنشاء</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CHEALDED | Elite Cyber Defense & Intelligence</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
-        body { background: #050505; color: #007cf0; font-family: sans-serif; display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0; text-align: center; }
-        .box { border: 1px solid #222; padding: 40px; border-radius: 20px; background: #0a0a0a; }
-        h1 { font-size: 3rem; margin-bottom: 10px; }
-        p { color: #666; font-family: monospace; }
+        @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+        body { background-color: #030303; font-family: 'Space Grotesk', sans-serif; color: #e5e5e5; }
+        .cyber-border { border: 1px solid rgba(0, 124, 240, 0.2); }
+        .cyber-border:hover { border-color: rgba(0, 124, 240, 0.6); box-shadow: 0 0 20px rgba(0, 124, 240, 0.1); }
+        .glow-text { text-shadow: 0 0 10px rgba(0, 124, 240, 0.5); }
+        .marquee { display: flex; overflow: hidden; user-select: none; gap: 4rem; mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent); }
+        @keyframes scroll { from { transform: translateX(0); } to { transform: translateX(-100%); } }
+        .marquee-content { display: flex; gap: 4rem; animation: scroll 40s linear infinite; flex-shrink: 0; min-width: 100%; }
+        .price-card-premium { background: linear-gradient(145deg, #0a0a0a 0%, #001a33 100%); border: 1px solid #007cf0; }
     </style>
 </head>
-<body>
-    <div class="box">
-        <h1>CHEALDED</h1>
-        <p>[ System Online - Testing Mode ]</p>
-        <p>To Be Best, Work With The Best.</p>
+<body class="overflow-x-hidden">
+
+    <nav class="fixed w-full z-50 bg-[#030303]/80 backdrop-blur-xl border-b border-white/5 py-4 px-10 flex justify-between items-center">
+        <div class="flex items-center gap-2">
+            <div class="w-8 h-8 bg-blue-600 rounded-sm rotate-45 flex items-center justify-center">
+                <i class="fas fa-shield-alt text-white -rotate-45 text-xs"></i>
+            </div>
+            <span class="text-2xl font-bold tracking-tighter text-white">CHEALDED</span>
+        </div>
+        <div class="hidden md:flex gap-10 text-xs font-bold uppercase tracking-widest text-gray-400">
+            <a href="#services" class="hover:text-blue-500 transition">Services</a>
+            <a href="#ched" class="hover:text-blue-500 transition">CHED Tool</a>
+            <a href="#pricing" class="hover:text-blue-500 transition">Pricing</a>
+            <a href="#crypto" class="hover:text-blue-500 transition">Payments</a>
+        </div>
+        <button class="bg-blue-600 text-white px-6 py-2 text-xs font-bold uppercase tracking-tighter rounded-sm hover:bg-blue-500 transition">Access Portal</button>
+    </nav>
+
+    <section class="relative min-h-screen flex flex-col justify-center items-center text-center px-6 pt-20">
+        <div class="absolute inset-0 z-0 opacity-20" style="background-image: radial-gradient(#1a1a1a 1px, transparent 1px); background-size: 40px 40px;"></div>
+        <div class="z-10">
+            <h2 class="text-blue-500 font-mono text-sm mb-4 tracking-[0.5em] uppercase">Neural Security Protocol</h2>
+            <h1 class="text-6xl md:text-8xl font-bold mb-8 text-white tracking-tighter">To Be Best,<br><span class="text-gray-600">Work With The Best.</span></h1>
+            <p class="max-w-2xl mx-auto text-gray-500 text-lg mb-12 font-light">نحن لا نقوم بحماية بياناتك فقط؛ نحن نبني حصوناً رقمية غير قابلة للاختراق. شيلدد هي قمة الذكاء السيبراني في العصر الحديث.</p>
+            <div class="flex gap-4 justify-center">
+                <button class="bg-white text-black px-10 py-4 font-bold rounded-sm hover:invert transition">Get Started</button>
+                <button class="border border-white/10 px-10 py-4 font-bold rounded-sm hover:bg-white/5 transition">Documentation</button>
+            </div>
+        </div>
+    </section>
+
+    <div class="py-16 border-y border-white/5 bg-black/50">
+        <div class="marquee">
+            <div class="marquee-content grayscale opacity-30">
+                <span class="text-xl font-black uppercase mx-8">Cloudflare</span>
+                <span class="text-xl font-black uppercase mx-8">Shodan</span>
+                <span class="text-xl font-black uppercase mx-8">Namecheap</span>
+                <span class="text-xl font-black uppercase mx-8">Gemini AI</span>
+                <span class="text-xl font-black uppercase mx-8">DigitalOcean</span>
+                <span class="text-xl font-black uppercase mx-8">Cisco</span>
+                <span class="text-xl font-black uppercase mx-8">Palo Alto</span>
+                <span class="text-xl font-black uppercase mx-8">Fortinet</span>
+                <span class="text-xl font-black uppercase mx-8">Metasploit</span>
+                <span class="text-xl font-black uppercase mx-8">CrowdStrike</span>
+            </div>
+            <div class="marquee-content grayscale opacity-30">
+                <span class="text-xl font-black uppercase mx-8">Cloudflare</span>
+                <span class="text-xl font-black uppercase mx-8">Shodan</span>
+                <span class="text-xl font-black uppercase mx-8">Namecheap</span>
+                <span class="text-xl font-black uppercase mx-8">Gemini AI</span>
+                <span class="text-xl font-black uppercase mx-8">DigitalOcean</span>
+                <span class="text-xl font-black uppercase mx-8">Cisco</span>
+                <span class="text-xl font-black uppercase mx-8">Palo Alto</span>
+                <span class="text-xl font-black uppercase mx-8">Fortinet</span>
+                <span class="text-xl font-black uppercase mx-8">Metasploit</span>
+                <span class="text-xl font-black uppercase mx-8">CrowdStrike</span>
+            </div>
+        </div>
     </div>
+
+    <section id="ched" class="py-32 px-10 max-w-7xl mx-auto">
+        <div class="flex flex-col md:flex-row gap-20 items-center">
+            <div class="flex-1">
+                <h3 class="text-blue-500 font-mono text-xs mb-4 uppercase tracking-widest">Core Product</h3>
+                <h2 class="text-5xl font-bold mb-8 text-white tracking-tighter italic">CHED <span class="text-gray-600">V1.0</span></h2>
+                <p class="text-gray-400 leading-relaxed mb-10 text-lg">أداة فحص استخباراتية تقوم بمسح شامل للبنية التحتية، الرؤوس (Headers)، والشهادات (SSL). ليست مجرد أداة فحص، بل هي عينك الثالثة في الشبكة.</p>
+                <ul class="space-y-4 mb-10">
+                    <li class="flex items-center gap-3 text-sm text-gray-300"><i class="fas fa-microchip text-blue-500"></i> فحص عميق للرؤوس الأمنية واستجابة السيرفر.</li>
+                    <li class="flex items-center gap-3 text-sm text-gray-300"><i class="fas fa-fingerprint text-blue-500"></i> تحليل شهادات SSL وكشف الثغرات المترتبة عنها.</li>
+                    <li class="flex items-center gap-3 text-sm text-gray-300"><i class="fas fa-network-wired text-blue-500"></i> تكامل مباشر مع Shodan API.</li>
+                </ul>
+            </div>
+            <div class="flex-1 w-full">
+                <div class="bg-blue-600/10 border border-blue-500/30 p-2 rounded-lg">
+                    <div class="bg-black p-6 rounded-md font-mono text-xs text-green-500 shadow-2xl overflow-hidden h-80">
+                        <div class="flex gap-2 mb-4">
+                            <div class="w-3 h-3 bg-red-500 rounded-full"></div>
+                            <div class="w-3 h-3 bg-yellow-500 rounded-full"></div>
+                            <div class="w-3 h-3 bg-green-500 rounded-full"></div>
+                        </div>
+                        <p class="mb-2 uppercase text-white font-bold">[!] Initializing CHED Scan Protocol...</p>
+                        <p class="mb-1 text-blue-400">>> Target IP: 192.168.1.1</p>
+                        <p class="mb-1">>> Scanning Headers... <span class="text-white font-bold">DONE</span></p>
+                        <p class="mb-1">>> Analyzing SSL/TLS Certificates... <span class="text-yellow-400">WARN (EXPIRED)</span></p>
+                        <p class="mb-1">>> Querying Shodan DB... <span class="text-white font-bold">MATCH FOUND</span></p>
+                        <p class="mt-4 text-white p-2 border border-blue-500/50 bg-blue-900/20">Critical Vulnerability Detected: CVE-2026-X</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="pricing" class="py-32 bg-[#050505]">
+        <div class="max-w-7xl mx-auto px-10">
+            <div class="text-center mb-20">
+                <h2 class="text-4xl font-bold text-white mb-4 italic tracking-tighter">Choose Your Tier</h2>
+                <p class="text-gray-500">حلول أمنية تناسب طموحك، من الفردي إلى مستوى المؤسسات الاستخباراتية.</p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="p-10 border border-white/5 bg-black rounded-sm flex flex-col items-center">
+                    <h4 class="text-xs font-mono mb-6 uppercase">Basic Access</h4>
+                    <span class="text-4xl font-bold mb-8 text-white">Free</span>
+                    <ul class="text-gray-500 text-sm space-y-4 mb-12 flex-1">
+                        <li><i class="fas fa-check mr-2 text-white"></i> فحص أساسي لـ IP واحد</li>
+                        <li><i class="fas fa-check mr-2 text-white"></i> تقرير الرؤوس البسيط</li>
+                        <li class="opacity-30"><i class="fas fa-times mr-2"></i> تحليل الشهادات المعمق</li>
+                    </ul>
+                    <button class="w-full border border-white/10 py-3 text-xs font-bold uppercase hover:bg-white/5">Start Free</button>
+                </div>
+                <div class="p-10 price-card-premium rounded-sm flex flex-col items-center relative scale-105 shadow-2xl">
+                    <div class="absolute -top-4 bg-blue-600 px-4 py-1 text-[10px] font-bold uppercase tracking-widest text-white">Most Popular</div>
+                    <h4 class="text-xs font-mono mb-6 uppercase text-blue-400 tracking-[0.3em]">Ched Pro</h4>
+                    <span class="text-4xl font-bold mb-8 text-white">$20 <span class="text-sm font-normal text-gray-500">/ Lifetime</span></span>
+                    <ul class="text-gray-400 text-sm space-y-4 mb-12 flex-1">
+                        <li><i class="fas fa-check mr-2 text-blue-500 font-bold"></i> فحص غير محدود للـ IPs</li>
+                        <li><i class="fas fa-check mr-2 text-blue-500 font-bold"></i> تحليل معمق للرؤوس والشهادات</li>
+                        <li><i class="fas fa-check mr-2 text-blue-500 font-bold"></i> ميزات الكشف عن الهوية</li>
+                    </ul>
+                    <button class="w-full bg-blue-600 py-3 text-xs font-bold uppercase hover:bg-blue-500 transition">Get Pro Now</button>
+                </div>
+                <div class="p-10 border border-white/5 bg-black rounded-sm flex flex-col items-center">
+                    <h4 class="text-xs font-mono mb-6 uppercase">Enterprise</h4>
+                    <span class="text-4xl font-bold mb-8 text-white">$299</span>
+                    <ul class="text-gray-500 text-sm space-y-4 mb-12 flex-1">
+                        <li><i class="fas fa-check mr-2 text-white font-bold"></i> كل ميزات Pro</li>
+                        <li><i class="fas fa-check mr-2 text-white font-bold"></i> تقارير PDF استشارية كاملة</li>
+                        <li><i class="fas fa-check mr-2 text-white font-bold"></i> دعم فني خاص وتعديل برمجيات</li>
+                    </ul>
+                    <button class="w-full border border-white/10 py-3 text-xs font-bold uppercase hover:bg-white/5 transition">Contact Sales</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="crypto" class="py-20 border-t border-white/5 bg-black">
+        <div class="max-w-4xl mx-auto px-10 text-center">
+            <h3 class="text-sm font-mono text-gray-400 mb-10 uppercase tracking-[0.4em]">Crypto Secure Payments Only</h3>
+            <div class="flex justify-center items-center gap-12 text-3xl opacity-40 grayscale hover:grayscale-0 transition-all duration-500">
+                <i class="fab fa-bitcoin text-orange-500" title="Bitcoin"></i>
+                <i class="fab fa-ethereum text-blue-400" title="Ethereum"></i>
+                <span class="font-bold text-green-500 text-xl">USDT (TRC20)</span>
+                <i class="fab fa-monero text-orange-600" title="Monero"></i>
+            </div>
+            <p class="mt-10 text-xs text-gray-600 font-mono italic">No Logs. No Names. No Trace. Chealded Privacy Protocol.</p>
+        </div>
+    </section>
+
+    <footer class="py-10 bg-[#030303] text-center border-t border-white/5">
+        <p class="text-[10px] uppercase tracking-widest text-gray-700">© 2026 CHEALDED CORE OPERATIONS. ALL RIGHTS RESERVED.</p>
+    </footer>
+
 </body>
 </html>
